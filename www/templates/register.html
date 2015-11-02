@@ -1,0 +1,34 @@
+
+<ion-view view-title="Registro">
+	<ion-content>
+		<h3>Debes llenar los siquientes datos para registrarte</h3>
+
+		<div ng-show="authCtrl.error">
+			<span>{{ authCtrl.error.message }}</span>
+		</div>	
+
+		<form ng-submit="authCtrl.register()">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Email" ng-model="authCtrl.user.email">
+			</div>
+			<div class="input-group">
+				<input type="password" class="form-control" placeholder="clave" ng-model="authCtrl.user.password">
+			</div>
+
+			<p>A qué te dedicas </p>
+			<select ng-model="authCtrl.user.dedicacion">
+		      <option>Finquero</option>
+		      <option>Jornalero</option>
+		      <option>Transportador</option>
+		      <option>Experto técnico</option>
+		      <option>Agronomo</option>
+		      <option>Vendedor de insumos</option>
+		      <option>Vendedor de maquinaria</option>
+		      <option>Otro</option>
+		    </select>
+			<input type="submit" class="form-control button button-block button-positive" placeholder="Registrarme">
+
+		</form>
+
+	</ion-content>
+</ion-view>

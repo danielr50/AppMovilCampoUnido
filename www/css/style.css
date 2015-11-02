@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.botones-principales{
+	height:130px;
+	padding:0; margin:0;
+}
+
+a.item-content.ng-binding{
+	height:130px;	
+}
+
+/*.item-complex .item-content, .item-radio .item-content {
+    
+     padding: 0; 
+ 
+ 
+}*/
+a.item-content{
+	padding:0;
+}
+
+#prueba .item-complex .item-content{
+	padding:0;
+}
